@@ -39,7 +39,7 @@ class _ThirdpageState extends State<Thirdpage> {
                       borderSide: BorderSide(
                           width: 3, color: Colors.black), //<-- SEE HERE
                     ),
-                    labelText: 'phone number',
+                    labelText: 'phone Number',
                     labelStyle: TextStyle(color: Colors.red),
 
                   ),
