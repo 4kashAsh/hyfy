@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:hyfy/secondpage.dart';
 
+import '6page.dart';
+import 'Fifth_Page.dart';
+import 'Interestpage.dart';
+import 'SplashScreen.dart';
 import 'Thirdpage.dart';
+import 'calender.dart';
+import 'femalepage.dart';
+import 'fourthpage.dart';
+import 'intpage111.dart';
+import 'malepage.dart';
 
 void main() {
   runApp(Hyfy());
@@ -17,12 +26,13 @@ class Hyfy extends StatefulWidget {
 class _HyfyState extends State<Hyfy> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: Secondpage(),
+      home: Secondpage(),
     );
   }
 }
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -34,43 +44,52 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: 1000,
-        width: 1000,
-        child: Stack(
+        body: Container(
+      height: 906,
+      width: 500,
+      child: Stack(
         children: [
-
           Positioned(
-              top: 10,
-              left: 10,
-              child: Image.asset('assets/images/firstimage',height: 500,width: 240,fit: BoxFit.fill,)),
-         Positioned(
-             top: 500,
-             right: 200,
-
-             child: Text('find,if it is far',),
-         ),
+              top: 59,
+              left: 18,
+              child: Image.asset(
+                'assets/images/firstimage',
+                height: 350,
+                width: 223,
+                fit: BoxFit.fill,
+              )),
           Positioned(
-              right: 100,
-              bottom: 210,
-              child: Image.asset('assets/images/secondimage.png',height: 200,width: 140,fit: BoxFit.fill,)),
+            top: 340,
+            right: 160,
+            child: Image.asset(
+              'assets/images/hyfyname.jpg',
+              height: 142,
+              width: 188,
+            ),
+          ),
+          Positioned(
+              top: 500,
+              right: 65,
+              child: Image.asset(
+                'assets/images/homepagelove.jpg',
+                height: 41,
+                width: 35,
+              )),
+          Positioned(
+              top: 540,
+              right: 80,
+              child: Image.asset('assets/images/TextHomepage.jpg')),
+          Positioned(
+              right: 10,
+              top: 600,
+              child: Image.asset(
+                'assets/images/secondimage.png',
+                height: 350,
+                width: 300,
+                fit: BoxFit.fill,
+              )),
         ],
-        ),
-      )
-    );
+      ),
+    ));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
